@@ -52,8 +52,8 @@ const OverView = () => {
             >
               <Box className="Included">
                 <List className="Included__list">
-                  {IncludeList.map((data) => (
-                    <ListItem className="listItem">
+                  {IncludeList.map((data, index: number) => (
+                    <ListItem className="listItem" key={index}>
                       <Image src={CheckIcon} alt="CheckIcon" />
                       <Typography className="text">{data}</Typography>
                     </ListItem>
@@ -62,8 +62,8 @@ const OverView = () => {
               </Box>
               <Box className="NotIncluded">
                 <List className="Included__list">
-                  {NotIncludedList.map((data) => (
-                    <ListItem className="listItem">
+                  {NotIncludedList.map((data, index: number) => (
+                    <ListItem className="listItem" key={index}>
                       <Image src={CrossIcon} alt="CrossIcon" />
                       <Typography className="text">{data}</Typography>
                     </ListItem>
@@ -77,8 +77,8 @@ const OverView = () => {
           <Box className="Schedule">
             <Accordions />
           </Box>
-          <AdditionalInfo/>
-          <CancellationPolicy/>
+          <AdditionalInfo />
+          <CancellationPolicy />
         </Box>
       </Container>
     </Box>

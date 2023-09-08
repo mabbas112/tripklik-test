@@ -34,8 +34,8 @@ const AdditionalInfo = () => {
         >
           <Box className="Included">
             <List className="Included__list list">
-              {IncludeList.map((data) => (
-                <ListItem className="listItem">
+              {IncludeList.map((data, index : number) => (
+                <ListItem className="listItem" key={index}>
                   <Image src={CheckIcon} alt="CheckIcon" />
                   <Typography className="text">{data}</Typography>
                 </ListItem>

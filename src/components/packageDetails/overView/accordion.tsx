@@ -54,8 +54,8 @@ const AccordianInfo = [
 export default function Accordions() {
   return (
     <Box className="Schedule__accordians">
-      {AccordianInfo.map((data) => (
-        <Accordion className="pannel">
+      {AccordianInfo.map((data, index : number) => (
+        <Accordion className="pannel" key={index}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
