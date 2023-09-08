@@ -1,0 +1,276 @@
+#PackageDetails {
+    .SearchForm {
+        margin-top: 25px;
+        position: static;
+
+        &__Container {
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.20));
+        }
+    }
+
+    .MainBanner {
+        &__Container {
+            &__header {
+                border-top: 1px solid #D0CBC9;
+                margin-top: 30px;
+                padding-top: 82px;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__info {
+                    display: flex;
+                    align-items: center;
+
+                    .circutText {
+                        color: #0042C6;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    .days {
+                        color: #222;
+                        font-size: 18px;
+                        font-weight: 300;
+                        margin-left: 30px;
+                    }
+
+                    .CancellationText {
+                        color: #027A02;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-left: 30px;
+                    }
+                }
+
+                &__price {
+                    display: flex;
+                    align-items: center;
+
+                    .fromText {
+                        color: #222;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+
+                    .number {
+                        color: #0042C6;
+                        font-size: 40px;
+                        font-weight: 500;
+                    }
+
+                    .currency {
+                        color: #0042C6;
+                        font-size: 32px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .CustomImageList {
+                &__listItem {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    .mainImage {
+                        border-radius: 4px;
+
+
+                    }
+
+                    .ImageBitMap2 {
+                        position: relative;
+                        margin-top: 5px;
+
+                        .seeMoreBtn {
+                            position: absolute;
+                            border-radius: 8px;
+                            border: 1px solid #222;
+                            background: #FFF;
+                            color: #222;
+                            text-align: center;
+                            font-size: 16px;
+                            font-weight: 700;
+                            top: 40%;
+                            left: 24%;
+                            width: 173px;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }
+
+    .OverView {
+        &__Container {
+            margin-top: 35px;
+
+            &__LeftSide {
+                max-width: 751px;
+
+                &__TextParagraph {
+                    .title {
+                        color: #222;
+                        font-size: 22px;
+                        font-weight: 500;
+                    }
+
+                    .text {
+                        color: #222;
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+                }
+
+                &__IncludeSection {
+                    margin-top: 43px;
+
+                    .title {
+                        color: #222;
+                        font-size: 22px;
+                        font-weight: 500;
+                    }
+
+                    .Included {
+                        &__list {
+
+                            .listItem {
+                                padding: 0%;
+                                margin-bottom: 10px;
+
+                                .text {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .seeMoreBtn {
+                    color: #0042C6;
+                    font-size: 14px;
+                    font-weight: 300;
+                    text-transform: capitalize;
+                }
+
+                .Schedule {
+                    &__accordians {
+                        .pannel {
+                            box-shadow: none;
+                            padding: 0%;
+                            border: unset;
+
+                            &__Summary {
+                                padding: 0%;
+
+                                .text {
+                                    color: #222;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                }
+                            }
+
+                            &__Details {
+                                padding: 0%;
+
+                                .placeImage {
+                                    border-radius: 4px;
+                                    width: 100%;
+                                }
+
+                                .paragraph {
+                                    color: #222;
+                                    font-size: 16px;
+                                    font-weight: 300;
+                                    margin-top: 10px;
+                                }
+
+                                .AccomodationDetail {
+                                    color: #222;
+                                    font-size: 16px;
+                                    font-weight: 300;
+                                    margin-top: 14px;
+                                }
+
+                                .info {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: 12px;
+
+                                    &__flight {
+                                        display: flex;
+                                        align-items: center;
+
+                                        .text {
+                                            color: #222;
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            margin-left: 6px;
+                                        }
+                                    }
+
+                                    &__Dinner {
+                                        display: flex;
+                                        align-items: center;
+                                        margin-left: 22px;
+
+                                        .text {
+                                            color: #222;
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            margin-left: 6px;
+                                        }
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+
+                .AdditionalInfo {
+                    margin-top: 35px;
+
+                    &__title {
+                        color: #222;
+                        font-size: 22px;
+                        font-weight: 500;
+                    }
+
+                    .list {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .listItem {
+                            width: 50%;
+                        }
+                    }
+                }
+
+                .CancellationPolicy {
+                    margin-top: 38px;
+
+                    &__title {
+                        color: #222;
+                        font-size: 22px;
+                        font-weight: 500;
+                    }
+
+                    &__text {
+                        color: #222;
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
